@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'azuresite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['DBNAME'],
-        'HOST': os.environ['DBHOST'],
-        'USER': os.environ['DBUSER'],
-        'PASSWORD': os.environ['DBPASS']
+        'NAME': 'pollsdb',
+        'HOST': 'serverchangetopostgresql.postgres.database.azure.com',
+        'USER': 'manager@serverchangetopostgresql',
+        'PASSWORD': 'supersecretpass'
     }
 }
 
